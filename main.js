@@ -1,6 +1,8 @@
-parseInt =let primoNumeroInserito = prompt ("Salve, inserisci il primo numero");
+let primoNumeroInserito = prompt ("Salve, inserisci il primo numero");
+parseInt = primoNumeroInserito;
 console.log ("stampo numero 1");
-parseInt = let secondoNumeroInserito = prompt ("Salve, inserisci il secondo numero");
+let secondoNumeroInserito = prompt ("Salve, inserisci il secondo numero");
+parseInt = secondoNumeroInserito;
 console.log ("stampo numero 2");
 let  vincitoreGioco;
 
