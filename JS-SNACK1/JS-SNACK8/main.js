@@ -1,11 +1,17 @@
-const nuemriInseriti =[10,15,20,25,30,35,40,45,50,55];
-console.log(nuemriInseriti);
-document.getElementById("primo").innerHTML =nuemriInseriti;
 
-let somma = sommaNumeri (nuemriInseriti);
-function sommaNumeri(numeriArray) {
-    let operazioneNumeri = 0 + nuemriInseriti;
-    console.log("somma numeri inseriti"+ operazioneNumeri);
-    document.getElementById("due").innerHTML =operazioneNumeri;
-    return operazioneNumeri;
-}
+let numeriInseritiArray = [10,15,20,25,30,35,40,45,50,55 ]; 
+console.log(numeriInseritiArray); 
+ 
+sommaNumeri(); 
+ 
+function sommaNumeri (){ 
+ 
+    let somma = 0; 
+    for (let i = 0; i < numeriInseritiArray.length; i++) { 
+        somma += numeriInseritiArray[i]; 
+        document.getElementById("somma").innerHTML = somma;
+    } 
+    console.log(somma); 
+}   
+document.getElementById("numeri").innerHTML = numeriInseritiArray;
+
