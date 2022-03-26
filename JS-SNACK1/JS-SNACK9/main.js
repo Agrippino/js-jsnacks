@@ -12,6 +12,6 @@ function sommaNumeri (){
         document.getElementById("somma").innerHTML = somma;
         media = somma / 10;
         document.getElementById("media").innerHTML = media;
-    }  console.log("risultato media aritmetica" + media);
+    }  console.log("risultato media aritmetica: " + media);
 }
 document.getElementById("numeri").innerHTML = numeriInseritiArray;
