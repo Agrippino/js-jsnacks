@@ -1,9 +1,7 @@
 
 let numeriInseritiArray = []; 
-
 console.log(numeriInseritiArray); 
- 
-sommaNumeri(); 
+sommaNumeri();
  
 function sommaNumeri (){ 
 
@@ -12,7 +10,8 @@ function sommaNumeri (){
         numeriInseritiArray.push(parseInt(prompt("insersci qui i numeri")));
         somma += numeriInseritiArray[i]; 
         document.getElementById("somma").innerHTML = somma;
-    } 
-    console.log(somma); 
-}   
+        media = somma / 10;
+        document.getElementById("media").innerHTML = media;
+    }  console.log("risultato media aritmetica" + media);
+}
 document.getElementById("numeri").innerHTML = numeriInseritiArray;
