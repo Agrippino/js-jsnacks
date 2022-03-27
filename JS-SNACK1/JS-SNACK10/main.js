@@ -1,15 +1,12 @@
-let numeriInseritiArray = []; 
-console.log(numeriInseritiArray); 
-sommaNumeri();
- 
-function sommaNumeri (){ 
-    let somma = 0; 
-    for (let i = 0; i <1; i++) {
-        numeriInseritiArray.push(parseInt(prompt("insersci qui i numeri")));
-        somma += numeriInseritiArray[i]; 
-        console.log(somma);
-        document.getElementById("somma").innerHTML = somma;
-    }
-}
-
-//document.getElementById("demo").innerHTML = arrayNumeri;
+let inserisciNumeri = prompt("insersci qui i numeri");
+    somma = inserisciNumeri
+        .toString()
+        .split('')
+        .map(Number)
+        .reduce(function (a, b) {
+            return a + b;
+        }, 0);
+document.getElementById("somma").innerHTML = somma;
+document.getElementById("numeri").innerHTML = inserisciNumeri;
+console.log("i numeri inseriti sono: " + inserisciNumeri);
+console.log("il risutato è: " + somma);
