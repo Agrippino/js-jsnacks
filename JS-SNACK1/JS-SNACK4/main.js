@@ -1,4 +1,6 @@
+//chideo il nome 
 let inserisciTesto = prompt("Il tuo nome è nella lsita?");
+//Lista con i nomi 
 let nomiNellaLista = ["matteo","fabio","pietro","anna","simone","bryan",]
 let nomeRisultato
 let variabileZero = 0
