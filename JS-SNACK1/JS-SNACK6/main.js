@@ -1,5 +1,6 @@
+//creo un valore booleano che
 let utenteHaiVinto=false
-
+//creo un ciclo che continuerà a girare finchè i numeri concidono
 while (utenteHaiVinto==false){
     let numeroComputer = Math.floor(Math.random() *11);
     console.log("il numero del computer è" + numeroComputer); 
